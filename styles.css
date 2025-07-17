@@ -98,6 +98,7 @@ aside h2 a {
 
 aside h2 a:hover {
   color: #6ca0dc;
+   text-align: center;
 }
 
 aside p {
@@ -106,6 +107,55 @@ aside p {
 }
 
 /* ======= TJÄNSTER / LAYOUT ======= */
+.services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px; /* avstånd mellan blocken */
+  padding: 20px;
+}
+
+.layout-block {
+  background-color: #e6f7ff;
+  padding: 15px 20px;
+  width: 280px; /* mindre bredd så det känns luftigare */
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layout-block h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.layout-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.layout-block ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.layout-block p {
+  margin: 0 0 15px 0;
+  line-height: 1.4;
+}
+
+/* Gör texten lite tydligare */
+.layout-block ul li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #333;
+}
 .layout {
   width: 900px;
   margin: 30px auto;
