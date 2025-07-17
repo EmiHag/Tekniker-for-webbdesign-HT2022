@@ -1,240 +1,178 @@
-/* Grundinställningar */
+/* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  letter-spacing: 0.05em;
+body {
+	background-color: white;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 0.3em;
+	min-height: 100%;
 }
 
-/* Wrapper för sticky footer */
-.wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Header */
+/* HEADER */
 .header-image {
-  background-image: url(head-img.jpeg);
-  background-position: center center; /* centrera bilden */
-  background-repeat: no-repeat;
-  background-size: contain; /* visar hela bilden utan beskärning */
-  background-color: #fff; /* valfri bakgrundsfärg om bilden har tomma ytor */
-  height: 300px; /* behåll eller justera efter behov */
-  max-width: 100%;
-  padding: 5%;
-  position: relative;
+	background-image: url(head-img.jpeg);
+	background-position: center bottom; /* Försök centrera hunden horisontellt och botten lodrätt */
+	background-repeat: no-repeat;
+	background-size: contain; /* Visa hela bilden utan att beskära */
+	padding: 5%;
+	position: relative;
+	max-width: 100%;
+	height: 300px;
+	margin-top: 0;
 }
 
 .header-text {
-  text-align: center;
-  position: relative;
-  transform: translateY(-50%);
-  top: 50%;
-  color: black;
-  max-width: 700px;
-  margin: 0 auto;
+	text-align: center;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+	width: 600px;
 }
 
-/* Navigation */
-nav {
-  background-color: #CAEBFF;
-  padding: 10px 0;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
+/* NAVIGATION */
 #navigation {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	margin: 5px;
+	width: 100%;
+	height: 170px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: larger;
 }
 
 #navigation li {
-  display: inline-block;
-  margin: 0 15px;
+	display: inline;
 }
 
 #navigation a {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
+	text-decoration: none;
+	padding: 30px;
+	margin: 40px;
+	color: #CAEBFF;
 }
 
-#navigation a:hover {
-  color: #FD0028;
+a:link {
+	color: black;
+	font-weight: bold;
 }
 
-/* Content */
-#content {
-  padding: 40px;
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
+a:visited, a:active {
+	color: black;
 }
 
-#content h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  text-decoration: underline;
+a:hover, a.on {
+	color: #CAEBFF;
 }
 
-#content p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-/* Services container flex */
-.services-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto 60px;
+/* FLEX CONTAINER FÖR SIDANS CONTENT OCH SIDOBAR */
+#main-content-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 40px;
+	margin: 40px auto;
+	max-width: 1200px;
+	padding: 0 20px;
+	text-align: left;
 }
 
-/* Box layout */
-.layout {
-  background-color: #EECB96;
-  border-radius: 8px;
-  width: 350px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.layout figure {
-  margin: 0;
-  width: 100%;
-}
-
-.layout figure img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.rubrik {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: underline;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.text {
-  list-style-position: inside;
-  text-align: left;
-  font-size: 1em;
-  line-height: 1.4;
-  padding-left: 10px;
-}
-
-.text li {
-  margin-bottom: 6px;
-}
-
-.layout p.text {
-  margin: 0;
-  padding-left: 10px;
-  font-size: 1em;
-  line-height: 1.4;
-  text-align: left;
-}
-
-/* Aside */
+/* SIDOBAR */
 aside {
-  max-width: 700px;
-  margin: 40px auto;
-  background-color: #EECB96;
-  padding: 20px;
-  border-radius: 8px;
+	flex: 1;
+	max-width: 400px;
+	background-color: #EECB96;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-aside h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-aside a {
-  text-decoration: none;
-  color: #000;
-}
-
-/* Slider */
+/* SLIDER */
 .slider {
-  position: relative;
-  width: 500px; /* matchar bildbredd */
-  height: 500px; /* matchar bildhöjd */
-  margin: 70px auto;
-  overflow: hidden;
-  background-color: #eee; /* för att se ytan */
+	position: relative;
+	width: 700px;
+	height: 500px;
+	overflow: hidden;
+	background-color: #eee;
+	border-radius: 8px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .slider .slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
 }
 
 .slider .slide.active {
-  opacity: 1;
+	opacity: 1;
 }
 
 .slider .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transform: none; /* ta bort scale/rotate om du vill */
-  animation: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-  background-color: #f8f8f8;
-  text-align: center;
-  padding: 20px 10px;
-  margin-top: auto;
+	width: 100%;
+	text-align: center;
+	table-layout: auto;
+	max-width: 100%;
+	margin-top: 50px;
 }
 
 footer table {
-  margin: 0 auto;
-}
-
-footer th {
-  padding: 0 15px;
-}
-
-footer a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
-
-footer a:hover {
-  color: #FD0028;
+	width: 100%;
 }
 
 .source {
-  margin-top: 15px;
-  font-style: italic;
-  text-align: center;
+	font-style: italic;
+	margin-top: 20px;
+	margin-left: 45px;
+}
+
+/* Rubriker */
+h1, h2 {
+	color: black;
+	font-family: serif;
+	text-align: center;
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 3.5em;
+	margin-top: 50px;
+	color: #FD0028;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+	font-size: 1.5em;
+	color: #FD0028;
+	margin-top: 25px;
+	margin-left: 0;
+}
+
+/* Responsivitet */
+@media (max-width: 768px) {
+	#main-content-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	aside, .slider {
+		max-width: 100%;
+		flex: none;
+	}
 }
