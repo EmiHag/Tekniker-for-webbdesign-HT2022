@@ -205,25 +205,6 @@ aside a {
   animation: none;
 }
 
-
-
-const slides = document.querySelectorAll('.slider .slide');
-let current = 0;
-
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-  });
-}
-
-function nextSlide() {
-  current = (current + 1) % slides.length;
-  showSlide(current);
-}
-
-showSlide(current);
-setInterval(nextSlide, 4000); // byter bild var 4:e sekund
-
 /* Footer */
 footer {
   background-color: #f8f8f8;
@@ -253,4 +234,5 @@ footer a:hover {
 .source {
   margin-top: 15px;
   font-style: italic;
+  text-align: center;
 }
