@@ -1,84 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Inlämningsuppgift 2</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Inlämningsuppgift 2</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-	<!--skapade gemensam heder-image, text och navigation på båda sidorna -->
-
 <body>
-	<div class="header-image">
-		<div class="header-text">
-			<h1>Daycare Fluffy</h1>
-		<main>Welcome to the world's largest dog daycare. Here they can be enriched outside in nature and play with friends. We take care of your dog when you don't have the opportunities. All sizes and breeds are welcome with us!</main> 
-	</div>
-    <nav id="navigation">
-		<ul>
-			<li><a href="index.html" class="current" title="Home">Home</a></li>
-			<li><a href="Our-services.html" class="current" title="Our services">Our services</a></li>
-		</ul>
-	</nav>
-</div>
-	<!-- Sidans content och beskrivning vad som hittas på sidan.-->
-	<section id="content">
-<h2>Our services</h2>
+  <div class="wrapper">
+    <!-- HEADER -->
+    <div class="header-image">
+      <div class="header-text">
+        <h1>Daycare Fluffy</h1>
+        <main>
+          Welcome to the world's largest dog daycare. Here they can be enriched outside in nature and play with friends. We take care of your dog when you don't have the opportunities. All sizes and breeds are welcome with us!
+        </main>
+      </div>
+      <nav>
+        <ul id="navigation">
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="Our-services.html" title="Our services">Our services</a></li>
+        </ul>
+      </nav>
+    </div>
 
-		<p>Here can you find everything you need. Our daily routines, locals an the prices we have</p>
-	</section>
-<!--Skapat en class "layout" för att möljigöra smårutor för varje kategorier-->
-		<div class="layout">
-			<p class="rubrik">Routines</p>
-		<figure><img src="layout1.jpeg" alt="Routines">
-		<ul class="text">
-		<li>06:00 - Opening.</li>
-		<li>07:30 - Breakfast time.</li>
-		<li>08:00 - Morning walk in the forest.</li>
-		<li>10:00 - Relax/play in the inside an ousite site.</li>
-		<li>12:00 - Lunch time.</li>
-		<li>14:00 - Play/swim in the lake.</li>
-		<li>16:00 - Middle day sanck.</li>
-		<li>18.00 - Closing time</li>
-	</ul>
-	   </figure>
-</div>
-	
-	
-	  <div class="layout">
-		<p class="rubrik">Locals</p>  
-	<figure><img src="layout2.jpeg" alt="Locals"> 
-	  <p class="text">At the dog daycare we have the option of a forest with mountains. there is also a lake with sand that the dogs have the opportunity to play, swim and dig in. At the house we have a large indoor room and also a fenced outdoor picnic area with a roof, when it rains and the weather is drizzly the dogs still have the opportunity to play outside .</p>
-	</figure>
-</div>
-	 
+    <!-- CONTENT -->
+    <section id="content">
+      <h2>Our services</h2>
+      <p>Here can you find everything you need. Our daily routines, locals and the prices we have.</p>
+    </section>
 
-	  <div class="layout">
-		<p class="rubrik">Price</p>
-		<figure><img src="layout3.jpeg" alt="Price">
-	<ul class="text">
-	<li>7 days a week-500€ weekly</li>
-	<li>5 days a week-400€ weekly</li>
-	<li>3 days a week-300€ weekly</li>
-	<li>1 day a week-20€ weekly</li>
-	</ul>
-	</figure>
-	</div>
+    <!-- Layout boxes -->
+    <div class="services-container">
+      <div class="layout">
+        <p class="rubrik">Routines</p>
+        <figure>
+          <img src="layout1.jpeg" alt="Routines" />
+          <ul class="text">
+            <li>06:00 - Opening.</li>
+            <li>07:30 - Breakfast time.</li>
+            <li>08:00 - Morning walk in the forest.</li>
+            <li>10:00 - Relax/play inside and outside.</li>
+            <li>12:00 - Lunch time.</li>
+            <li>14:00 - Play/swim in the lake.</li>
+            <li>16:00 - Middle day snack.</li>
+            <li>18:00 - Closing time.</li>
+          </ul>
+        </figure>
+      </div>
 
-  <!--Enkel footer gemensam på båda sidorna-->
+      <div class="layout">
+        <p class="rubrik">Locals</p>
+        <figure>
+          <img src="layout2.jpeg" alt="Locals" />
+          <p class="text">
+            At the dog daycare we have the option of a forest with mountains. There is also a lake with sand where the dogs can play, swim, and dig. At the house we have a large indoor room and a fenced outdoor picnic area with a roof, so dogs can play outside even when it rains.
+          </p>
+        </figure>
+      </div>
 
-	  
-<footer>
-	<table>
-	   <tr>
-		  <th><a href="index.html">Home</a></th>
-		  <th><a href="Our-services.html">Our services</a></th>
-		  <th><a href="index.html#about-us">About us</a></th>
-		  <th><a href="http://www2.jordbruksverket.se/webdav/files/SJV/trycksaker/Pdf_jo/jo11_2v2.pdf">Terms</a></th>
-</tr>
-   </table>
-<p class="source">Daycare Fluffy © 2022</p>
- </footer>
-	
+      <div class="layout">
+        <p class="rubrik">Price</p>
+        <figure>
+          <img src="layout3.jpeg" alt="Price" />
+          <ul class="text">
+            <li>7 days a week - 500€ weekly</li>
+            <li>5 days a week - 400€ weekly</li>
+            <li>3 days a week - 300€ weekly</li>
+            <li>1 day a week - 20€ weekly</li>
+          </ul>
+        </figure>
+      </div>
+    </div>
+  </div>
 
+  <!-- FOOTER -->
+  <footer>
+    <table>
+      <tr>
+        <th><a href="index.html">Home</a></th>
+        <th><a href="Our-services.html">Our services</a></th>
+        <th><a href="index.html#about-us">About us</a></th>
+        <th><a href="http://www2.jordbruksverket.se/webdav/files/SJV/trycksaker/Pdf_jo/jo11_2v2.pdf">Terms</a></th>
+      </tr>
+    </table>
+    <p class="source">Daycare Fluffy © 2022</p>
+  </footer>
 </body>
 </html>
