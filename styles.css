@@ -1,368 +1,170 @@
-/* Nollställning av marginaler/padding och box-sizing */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
-/* Grundinställningar för sidan */
+/* Besluta om font-family, storleker och vars texten ska ligga. */
 body {
-  background-color: #f8f8f8; /* Ljusare bakgrund */
+  background-color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 400; /* Lättare typsnittsvikt */
-  line-height: 1.6;
-  color: #333;
-  min-height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+  font-weight:500;
+  text-align: center;
+  letter-spacing: 0.3em;
+  min-height: 100%; 
 }
 
-/* Header */
-.header {
+/* header-image och text för alla gemensama html sidor. */
+.header-image{
   background-image: url(head-img.jpeg);
-  background-position: center; /* Centrera bilden */
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2em;
-  text-align: center;
-  color: white; /* Ljus text på mörk bakgrund */
-  position: relative; /* För att positionera .header-content */
-}
-
-.header::before { /* Mörkare overlay för bättre textläsbarhet */
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.header-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1em;
+  padding: 5%;
   position: relative;
-  z-index: 2; /* Placera texten över overlay */
+  max-width: 100%;
+  height: 300px;
+  margin-top: 0px;
 }
 
-.header h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Textskugga */
+.header-text {
+text-align:center;
+position:relative;
+left: 50%;
+transform: translate(-50%, -50%);
+color: black;
+width: 600px;
 }
 
-.header-description {
-  font-size: 1.2em;
-  line-height: 1.6;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Textskugga */
+/*Skapa en horisontell navigation som  är på header image.*/
+#navigation {
+  margin: 5px;
+	width: 100%;
+  height: 170px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
 }
+#navigation li {
+	display: inline;
 
-/* Navigation */
-.main-nav {
-  background-color: #333; /* Mörkare nav */
-  text-align: center;
-  font-size: 1.1em;
-  padding: 0.5em 0;
 }
-
-.nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
+#navigation a{
+	text-decoration:none;
+  padding: 30px;
+  margin: 40px;
+	color:#CAEBFF;
 }
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-  padding: 0.5em 1em;
-  margin: 0 1em;
+a:link {
+  color: black;
   font-weight: bold;
-  transition: background-color 0.3s ease; /* Mjukare övergång */
+}
+a:visited,:active {
+  color: black;
+}
+a:hover, a.on {
+  color: #CAEBFF;
 }
 
-.nav-link:hover, .nav-link.current {
-  background-color: #555;
-  color: #fff;
+/* Centrera texten och göra den bredare.*/
+#content{
+width: 90%;
+text-align: center;
+display:contents;
 }
 
-/* Gemensamma sektionsstilar */
-.services-section, .about-section {
-  padding: 2em 1em;
-  margin: 2em auto;
-  max-width: 80%;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lätt skugga */
-  border-radius: 8px; /* Rundade hörn */
+aside {
+float:right;
+ width: 450px;
+ margin-right: 60px;
+ top: 400px;
 }
 
-.section-title {
-  font-size: 2em;
-  margin-bottom: 1em;
-  color: #333;
-  text-decoration: none;
-  font-family: 'Trebuchet MS', sans-serif;
-  text-align: center; /* Centrera rubriktexten */
-}
-
-.services-description, .about-text {
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: #555;
-  text-align: left;
-  font-family: Garamond, serif;
-  padding: 1em;
-  background-color: #f0f0f0; /* Ljusare bakgrund för text */
-  border-radius: 4px;
-}
-
-/* Sidospalt */
-.sidebar {
-  width: 90%;
-  max-width: 400px;
-  margin: 2em auto;
-  padding: 1em;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  text-align: left;
-}
-
-.sidebar-title {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
-  color: #333;
-  font-family: 'Trebuchet MS', sans-serif;
-  text-decoration: underline;
-  text-align: center; /* Centrera sidospaltsrubrik */
-}
-
-.sidebar-text {
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: #555;
-}
-
-/* Bildslider */
-.slider-section {
+/* Gemensamaegenskaper på H1,H2 då dem ska se samman hängade ut.*/
+h1,h2{
+  color: black;
+  font-family: serif;
   text-align: center;
-  margin: 2em auto;
+  text-decoration: underline;
 }
 
-.slider {
+/* Ändrar färg och position. */
+.text {
+ list-style:disc inside;
+ width: fit-content;
+ margin: 10px;
+ text-align: start;
+ background-color:#EECB96;
+ height: 500px;
+
+ 
+}
+/* skapade gemnsam layout på services html med rutor med bild samt text. */
+.layout {
+  float: left;
+  width: 370px;
+  margin: 40px;
+  height: 298px;
+ 
+}
+figure {
+  width: 350px;
+  height: 300px;
+  background-color: #EECB96;
+  padding: 10px;
+}
+figure img {
+  width: 300px;
+  height: 250px;
+}
+.rubrik {
+  font-size: larger;
+  text-decoration: underline;
+}
+/* CSS egenskaper för att möjligöra en automatisk slider. */
+.slider{
   display: flex;
-  justify-content: center;
-  align-items: center; /* Centrera vertikalt */
-  height: 400px; /* Fast höjd för slider */
+  height: 450px;
   overflow: hidden;
   position: relative;
-  padding: 1em;
-  margin: 1em auto;
-  background-color: #eee; /* Ljusare bakgrund för slider */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 70px;
 }
-
-.slider .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* Mjukare övergång */
-}
-
 .slider .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Beskär bilder för att fylla slider */
-  border-radius: 8px;
-}
-
-.slider .slide.active {
-  opacity: 1;
-}
-
-/* Layout för tjänster (Our Services) */
-.routine-section, .location-section, .price-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Centrera sektioner */
-  margin-bottom: 2em;
-  padding: 1em;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.subsection-title {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
-  color: #333;
-  font-family: 'Trebuchet MS', sans-serif;
-  text-decoration: underline;
-  width: 100%;
-  text-align: center;
-}
-
-.routine-content, .location-content, .price-content {
-  flex: 1 1 300px; /* Minsta bredd för innehåll */
-  padding: 1em;
-  text-align: left;
-}
-
-.routine-image, .location-image, .price-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 1em;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lätt skugga för bilder */
-}
-
-.routine-list, .price-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.routine-list li, .price-list li {
-  padding-bottom: 0.5em;
-  font-size: 1.1em;
-  color: #555;
-}
-
-.location-description {
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: #555;
-}
-
-/* Footer */
-.main-footer {
-  width: 100%;
-  text-align: center;
-  margin-top: auto;
-  background-color: #333;
-  color: white;
-  padding: 1em 0;
-  border-top: 2px solid #555; /* Tydligare avgränsning */
-}
-
-.footer-nav {
-  margin-bottom: 0.5em;
-}
-
-.footer-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.footer-link {
-  color: white;
-  text-decoration: none;
-  padding: 0.5em 1em;
-  margin: 0 1em;
-  transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: #aaa; /* Ljusare färg vid hover */
-}
-
-.copyright {
-  font-style: italic;
-  margin-top: 0.5em;
-  font-size: 0.9em;
-  color: #aaa;
-}
-
-/* Responsivitet */
-@media (max-width: 768px) {
-  .header {
-    padding: 1em;
-  }
-
-  .header-content {
-    max-width: 90%;
-  }
-
-  .header h1 {
-    font-size: 2em;
-  }
-
-  .main-nav {
-    font-size: 1em;
-  }
-
-  .nav-list {
-    flex-direction: column;
-  }
-
-  .nav-link {
-    padding: 0.5em;
-    margin: 0;
-  }
-
-  .services-section, .about-section, .sidebar {
-    margin: 1em auto;
-    padding: 1em;
-  }
-
-  .slider {
-    height: auto;
-  }
-
-  .slider .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-
-  .slider .slide img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  .slider .slide.active {
-    opacity: 1;
-  }
-
-  @keyframes slowFade {
-    0%, 100% { opacity: 1; }
-    /* Inaktivera fade-effekt på små skärmar */
-    25%, 75% { opacity: 1; }
-  }
-
-  .routine-section, .location-section, .price-section {
-    flex-direction: column;
-  }
-
-  .routine-content, .location-content, .price-content {
-    flex: 1 1 100%;
-  }
-}
-
-/* JavaScript-aktiverade stilar för slider */
-.slider-js .slider .slide {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  backface-visibility: hidden;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transform: scale(1.5) rotate(15deg);
+  animation: slowFade 32s infinite;
+  
 }
-
-.slider-js .slider .slide.active {
+.slider .slide:nth-child(3) img {
+  
+  animation-delay: 8s;
+}
+.slider .slide:nth-child(2) img {
+  animation-delay: 16s;
+}
+.slider .slide:nth-child(1) img {
+  animation-delay: 24s;
+}
+@keyframes slowFade {
+  25% {
   opacity: 1;
+  transform: scale(1) rotate(0);
+  }
+  40% {
+  opacity: 0;
+  }
 }
+/* Gemensama footer på "home" sidan ör den korrekt. På "services" sidan är den inte i korrekt, har reserchat men kan inte lösa det. */
+footer {
+  width: 100%;
+  text-align: center;
+  table-layout: auto;
+  max-width: 100%;}
+ table {
+    width: 100%;}
+
+
+
+  
+ 
+
+ 
