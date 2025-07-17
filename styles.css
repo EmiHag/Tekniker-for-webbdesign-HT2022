@@ -44,28 +44,31 @@ html, body {
 
 /* Navigation */
 nav {
+  background-color: #CAEBFF;
+  padding: 10px 0;
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 #navigation {
-  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 #navigation li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 15px;
 }
 
 #navigation a {
   text-decoration: none;
-  color: #000;
   font-weight: bold;
-  padding: 10px;
+  color: black;
 }
 
 #navigation a:hover {
-  color: #CAEBFF;
+  color: #FD0028;
 }
 
 /* Content */
@@ -171,11 +174,12 @@ aside a {
 /* Slider */
 .slider {
   display: flex;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
   height: 450px;
-  margin: 40px auto;
+  overflow: hidden;
+  position: relative;
+  padding: 30px;
+  margin: 70px auto;
+  max-width: 1000px; 
 }
 
 .slide img {
