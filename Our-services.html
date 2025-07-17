@@ -1,60 +1,85 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daycare Fluffy - Våra tjänster</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Här hittar du information om våra tjänster på Daycare Fluffy. Vi tar hand om din hund när du inte har möjlighet – ute i naturen, med lek och omsorg.">
-  </head>
+	<title>Inlämningsuppgift 2</title>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="hund.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+	<!--skapade gemensam heder-image, text och navigation på båda sidorna -->
 
 <body>
-  <header class="header">  <div class="header-content">  <h1>Daycare Fluffy</h1>
-      <p class="header-description">  Välkommen till världens största hunddagis. Vi tar hand om din hund när du inte har möjlighet – ute i naturen, med lek och omsorg.
-      </p>
-    </div>
-    <nav class="main-nav">  <ul class="nav-list">  <li><a href="index.html" class="nav-link" title="Hem">Hem</a></li>  <li><a href="our-services.html" class="nav-link current" title="Våra tjänster">Våra tjänster</a></li>  </ul>
-    </nav>
-  </header>
+	<div class="header-image">
+		<div class="header-text">
+			<h1>Daycare Fluffy</h1>
+		<main>Welcome to the world's largest dog daycare. Here they can be enriched outside in nature and play with friends. We take care of your dog when you don't have the opportunities. All sizes and breeds are welcome with us!</main> 
+	</div>
+    <nav id="navigation">
+		<ul>
+			<li><a href="index.html" class="current" title="Home">Home</a></li>
+			<li><a href="Our-services.html" class="current" title="Our services">Our services</a></li>
+		</ul>
+	</nav>
+</div>
+	<!-- Sidans content och beskrivning vad som hittas på sidan.-->
+	<section id="content">
+<h2>Our services</h2>
 
-  <main>
-    <section id="services" class="services-section">  <h2 class="section-title">Våra tjänster</h2>  <p class="services-description">  Här hittar du allt du behöver: våra dagliga rutiner, våra lokaler och priserna för olika alternativ.
-      </p>
-    </section>
+		<p>Here can you find everything you need. Our daily routines, locals an the prices we have</p>
+	</section>
+<!--Skapat en class "layout" för att möljigöra smårutor för varje kategorier-->
+		<div class="layout">
+			<p class="rubrik">Routines</p>
+		<figure><img src="layout1.jpeg" alt="Routines">
+		<ul class="text">
+		<li>06:00 - Opening.</li>
+		<li>07:30 - Breakfast time.</li>
+		<li>08:00 - Morning walk in the forest.</li>
+		<li>10:00 - Relax/play in the inside an ousite site.</li>
+		<li>12:00 - Lunch time.</li>
+		<li>14:00 - Play/swim in the lake.</li>
+		<li>16:00 - Middle day sanck.</li>
+		<li>18.00 - Closing time</li>
+	</ul>
+	   </figure>
+</div>
+	
+	
+	  <div class="layout">
+		<p class="rubrik">Locals</p>  
+	<figure><img src="layout2.jpeg" alt="Locals"> 
+	  <p class="text">At the dog daycare we have the option of a forest with mountains. there is also a lake with sand that the dogs have the opportunity to play, swim and dig in. At the house we have a large indoor room and also a fenced outdoor picnic area with a roof, when it rains and the weather is drizzly the dogs still have the opportunity to play outside .</p>
+	</figure>
+</div>
+	 
 
-    <section class="routine-section">  <h3 class="subsection-title">Rutiner</h3>  <div class="routine-content">  <img src="layout1.jpeg" alt="Illustration av dagsrutin" class="routine-image">  <ul class="routine-list">  <li>06:00 – Öppning</li>
-          <li>07:30 – Frukost</li>
-          <li>08:00 – Morgonpromenad i skogen</li>
-          <li>10:00 – Lek/vila inomhus och utomhus</li>
-          <li>12:00 – Lunch</li>
-          <li>14:00 – Lek eller bad i sjön</li>
-          <li>16:00 – Mellanmål</li>
-          <li>18:00 – Stängning</li>
-        </ul>
-      </div>
-    </section>
+	  <div class="layout">
+		<p class="rubrik">Price</p>
+		<figure><img src="layout3.jpeg" alt="Price">
+	<ul class="text">
+	<li>7 days a week-500€ weekly</li>
+	<li>5 days a week-400€ weekly</li>
+	<li>3 days a week-300€ weekly</li>
+	<li>1 day a week-20€ weekly</li>
+	</ul>
+	</figure>
+	</div>
 
-    <section class="location-section">  <h3 class="subsection-title">Lokaler</h3>  <div class="location-content">  <img src="layout2.jpeg" alt="Hunddagisets miljö" class="location-image">  <p class="location-description">  Hos oss har hundarna tillgång till en skog med berg och en sjö med sandstrand där de kan leka, bada och gräva. Inomhus finns ett stort lekrum och en inhägnad uteplats med tak så att hundarna kan vara ute även vid regn.
-        </p>
-      </div>
-    </section>
+  <!--Enkel footer gemensam på båda sidorna-->
 
-    <section class="price-section">  <h3 class="subsection-title">Priser</h3>  <div class="price-content">  <img src="layout3.jpeg" alt="Illustration av priser" class="price-image">  <ul class="price-list">  <li>7 dagar i veckan – 500 €/vecka</li>
-          <li>5 dagar i veckan – 400 €/vecka</li>
-          <li>3 dagar i veckan – 300 €/vecka</li>
-          <li>1 dag i veckan – 20 €/vecka</li>
-        </ul>
-      </div>
-    </section>
-  </main>
+	  
+<footer>
+	<table>
+	   <tr>
+		  <th><a href="index.html">Home</a></th>
+		  <th><a href="Our-services.html">Our services</a></th>
+		  <th><a href="index.html#about-us">About us</a></th>
+		  <th><a href="http://www2.jordbruksverket.se/webdav/files/SJV/trycksaker/Pdf_jo/jo11_2v2.pdf">Terms</a></th>
+</tr>
+   </table>
+<p class="source">Daycare Fluffy © 2022</p>
+ </footer>
+	
 
-  <footer class="main-footer">  <nav class="footer-nav">
-      <ul class="footer-list">  <li><a href="index.html" class="footer-link">Hem</a></li>  <li><a href="our-services.html" class="footer-link">Våra tjänster</a></li>  <li><a href="index.html#about-us" class="footer-link">Om oss</a></li>  <li>
-          <a href="http://www2.jordbruksverket.se/webdav/files/SJV/trycksaker/Pdf_jo/jo11_2v2.pdf" target="_blank" rel="noopener" class="footer-link">
-            Villkor
-          </a>
-        </li>  </ul>
-    </nav>
-    <p class="copyright">Daycare Fluffy © 2022</p>  </footer>
 </body>
 </html>
