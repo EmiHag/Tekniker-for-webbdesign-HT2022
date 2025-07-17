@@ -75,6 +75,10 @@ a:hover, a.on {
   width: 90%;
   margin: auto;
   text-align: center;
+  #content {
+  flex: 1; 
+}
+
 }
 
 aside {
