@@ -224,7 +224,6 @@ function nextSlide() {
 showSlide(current);
 setInterval(nextSlide, 4000); // byter bild var 4:e sekund
 
-
 /* Footer */
 footer {
   background-color: #f8f8f8;
