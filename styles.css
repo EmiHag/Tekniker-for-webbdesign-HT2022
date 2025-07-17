@@ -23,12 +23,14 @@ html, body {
 
 /* Header */
 .header-image {
-  background-image: url('head-img.jpeg');
-  background-position: bottom;
+  background-image: url(head-img.jpeg);
+  background-position: center center; /* centrera bilden */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain; /* visar hela bilden utan beskärning */
+  background-color: #fff; /* valfri bakgrundsfärg om bilden har tomma ytor */
+  height: 300px; /* behåll eller justera efter behov */
+  max-width: 100%;
   padding: 5%;
-  height: 300px;
   position: relative;
 }
 
