@@ -1,0 +1,89 @@
+/* Nollställning av marginaler/padding */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Grundinställningar för kroppen */
+  body {
+	background-color: #ff99aa;
+	font-size: 1em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Huvudrubrik */
+  h1 {
+	text-align: center;
+	font-size: 3.5em;
+	margin-top: 50px;
+	color: #FD0028;
+	font-family: 'Trebuchet MS', sans-serif;
+	text-decoration: underline;
+  }
+  
+  /* Underrubriker */
+  h2 {
+	font-size: 1.5em;
+	color: #FD0028;
+	margin-top: 25px;
+	margin-left: 45px;
+	font-family: 'Trebuchet MS', sans-serif;
+	text-decoration: underline;
+  }
+  
+  /* Navigation (vänstersida) */
+  #navigation {
+	width: 100px;
+	float: left;
+	margin-top: 150px;
+	padding-left: 50px;
+  }
+  
+  /* Huvudinnehåll */
+  #content {
+	width: 700px;
+	float: left;
+  }
+  
+  /* Textstyling */
+  .text {
+	padding-left: 45px;
+	font-size: 1.2em;
+	font-family: Garamond, serif;
+	text-align: left;
+  }
+  
+  /* Bildblock */
+  .image {
+	width: 500px;
+	float: left;
+	margin: 10px 20px 0 45px;
+	font-style: italic;
+  }
+  
+  /* Bilder */
+  img {
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+  }
+  
+  /* Källhänvisning */
+  .source {
+	font-style: italic;
+	margin-top: 20px;
+	margin-left: 45px;
+  }
+  
+  /* Listor */
+  ul {
+	list-style-type: none;
+	padding-left: 45px;
+  }
+  
+  ul li {
+	padding-bottom: 10px;
+	font-size: 1.1em;
+  }
+  
