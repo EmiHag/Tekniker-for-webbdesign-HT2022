@@ -1,4 +1,4 @@
-/* ========== Grundinställningar & Reset ========== */
+/* Grundinställningar */
 * {
   margin: 0;
   padding: 0;
@@ -6,33 +6,24 @@
 }
 
 html, body {
-  background-color: #fff8f9;
+  height: 100%;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: #333;
-  letter-spacing: 0.03em;
-  min-height: 100%;
-  text-align: center;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  letter-spacing: 0.05em;
+}
+
+/* Wrapper för sticky footer */
+.wrapper {
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-/* ========== Länkar ========== */
-a {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-}
-
-a:hover, a.on {
-  color: #CAEBFF;
-}
-
-/* ========== Header ========== */
+/* Header */
 .header-image {
-  background-image: url(head-img.jpeg);
+  background-image: url('head-img.jpeg');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,179 +33,137 @@ a:hover, a.on {
 }
 
 .header-text {
+  text-align: center;
   position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+  top: 50%;
   color: black;
-  width: 600px;
-  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-/* ========== Navigation ========== */
+/* Navigation */
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
 #navigation {
-  width: 100%;
-  height: 170px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: larger;
-  margin-top: 150px;
-  padding-left: 0;
-}
-
-#navigation li {
-  display: inline;
-}
-
-#navigation a {
-  padding: 30px;
-  margin: 40px;
-  color: #CAEBFF;
-}
-
-/* ========== Huvudinnehåll ========== */
-#content {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  #content {
-  flex: 1; 
-}
-
-}
-
-aside {
-  float: right;
-  width: 450px;
-  margin-right: 60px;
-  top: 400px;
-}
-
-.text {
-  list-style: disc inside;
-  width: fit-content;
-  margin: 10px auto;
-  text-align: left;
-  background-color: #EECB96;
-  height: 500px;
-  padding-left: 45px;
-  font-size: 1.2em;
-  font-family: Garamond, serif;
-}
-
-/* ========== Rubriker ========== */
-h1, h2 {
-  color: #FD0028;
-  font-family: 'Trebuchet MS', sans-serif;
-  text-align: center;
-  text-decoration: underline;
-}
-
-h1 {
-  font-size: 3.5em;
-  margin-top: 50px;
-}
-
-h2 {
-  font-size: 1.5em;
-  margin-top: 25px;
-  margin-left: 45px;
-}
-
-/* ========== Layout & Bilder ========== */
-.layout {
-  float: left;
-  width: 370px;
-  margin: 40px;
-  height: 298px;
-}
-
-figure {
-  width: 350px;
-  height: 300px;
-  background-color: #EECB96;
-  padding: 10px;
-}
-
-figure img {
-  width: 300px;
-  height: 250px;
-}
-
-.rubrik {
-  font-size: larger;
-  text-decoration: underline;
-}
-
-.image {
-  width: 500px;
-  float: left;
-  margin-top: 10px;
-  margin-left: 45px;
-  margin-right: 20px;
-  font-style: italic;
-}
-
-img {
-  width: 100%;
-  max-width: 500px;
-}
-
-/* ========== Slider ========== */
-.slider {
-  display: flex;
-  height: 450px;
-  overflow: hidden;
-  position: relative;
-  padding: 30px;
-  margin: 70px auto;
-}
-
-.slider .slide img {
-  position: absolute;
-  height: 500px;
-  width: 500px;
-  backface-visibility: hidden;
-  opacity: 0;
-  transform: scale(1.5) rotate(15deg);
-  animation: slowFade 32s infinite;
-}
-
-.slider .slide:nth-child(3) img { animation-delay: 8s; }
-.slider .slide:nth-child(2) img { animation-delay: 16s; }
-.slider .slide:nth-child(1) img { animation-delay: 24s; }
-
-@keyframes slowFade {
-  25% {
-    opacity: 1;
-    transform: scale(1) rotate(0);
-  }
-  40% {
-    opacity: 0;
-  }
-}
-
-/* ========== Footer ========== */
-footer {
-  width: 100%;
-  text-align: center;
-  max-width: 100%;
-}
-
-footer table {
-  width: 100%;
-}
-
-/* ========== Övriga listor ========== */
-ul {
   list-style-type: none;
 }
 
-ul li {
-  padding-bottom: 10px;
+#navigation li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#navigation a:hover {
+  color: #CAEBFF;
+}
+
+/* Content */
+#content {
+  padding: 40px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+#content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+#content p {
   font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Aside */
+aside {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: #EECB96;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+aside h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+aside a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+  margin: 40px auto;
+}
+
+.slide img {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.3) rotate(15deg);
+  animation: slowFade 32s infinite;
+}
+
+.slider .slide:nth-child(1) img { animation-delay: 0s; }
+.slider .slide:nth-child(2) img { animation-delay: 8s; }
+.slider .slide:nth-child(3) img { animation-delay: 16s; }
+.slider .slide:nth-child(4) img { animation-delay: 24s; }
+
+@keyframes slowFade {
+  0%, 100% { opacity: 0; transform: scale(1.3) rotate(15deg); }
+  25% { opacity: 1; transform: scale(1) rotate(0); }
+  50% { opacity: 0; }
+}
+
+/* Footer */
+footer {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: auto;
+}
+
+footer table {
+  margin: 0 auto;
+}
+
+footer th {
+  padding: 0 15px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #FD0028;
 }
 
 .source {
+  margin-top: 15px;
   font-style: italic;
-  margin-top: 20px;
-  margin-left: 45px;
 }
