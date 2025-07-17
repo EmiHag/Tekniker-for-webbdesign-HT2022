@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Inlämningsuppgift 2</title>
+  <title>Daycare Fluffy</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- Header med bild -->
   <div class="header-image">
     <div class="header-text">
       <h1>Daycare Fluffy</h1>
@@ -13,56 +15,54 @@
         Welcome to the world's largest dog daycare. Here they can be enriched outside in nature and play with friends. We take care of your dog when you don't have the opportunities. All sizes and breeds are welcome with us!
       </main>
     </div>
-    </div>
-    <nav>
-      <ul id="navigation">
-        <li><a href="index.html" class="current" title="Home">Home</a></li>
-        <li><a href="Our-services.html" title="Our services">Our services</a></li>
-      </ul>
-    </nav>
+  </div>
 
+  <!-- Navigation -->
+  <nav>
+    <ul id="navigation">
+      <li><a href="index.html" class="current" title="Home">Home</a></li>
+      <li><a href="Our-services.html" title="Our services">Our services</a></li>
+    </ul>
+  </nav>
+
+  <!-- About us -->
   <section id="content">
     <h2 id="About-us">About us</h2>
     <p>
-      Welcome to the world's largest dog daycare. Here they can be enriched outside in nature and play with friends. We take care of your dog when you don't have the opportunities. All sizes and breeds are welcome with us! Welcome to the world's largest dog daycare. Here they can be enriched outside in nature and play with friends. We take care of your dog when you don't have the opportunities. All sizes and breeds are welcome with us! Welcome to the world's largest dog daycare. Here they can be enriched outside in nature and play with friends. We take care of your dog when you don't have the opportunities. All sizes and breeds are welcome with us!
+      Welcome to the world's largest dog daycare. Here they can be enriched outside in nature and play with friends. We take care of your dog when you don't have the opportunities. All sizes and breeds are welcome with us!
     </p>
   </section>
 
+  <!-- History / Wikipedia -->
   <aside>
     <h2><a href="https://sv.wikipedia.org/wiki/Hunddagis">History</a></h2>
     <p>
-      Welcome to the world's largest dog daycare. Here they can be enriched outside in nature and play with friends. We take care of your dog when you don't have the opportunities. All sizes and breeds are welcome with us! Welcome to the world's largest dog daycare. Here they can be enriched outside in nature and play with friends. We take care of your dog when you don't have the opportunities. All sizes and breeds are welcome with us! Welcome to the world's largest dog daycare. Here they can be enriched outside in nature and play with friends. We take care of your dog when you don't have the opportunities. All sizes and breeds are welcome with us!
+      Dog daycare has become increasingly popular as pet owners seek reliable care. Learn more at the linked Wikipedia page.
     </p>
   </aside>
 
   <!-- Bildspel -->
   <div class="slider">
-    <div class="slide active">
-      <img src="slide1.webp" alt="slide 1" />
-    </div>
-    <div class="slide">
-      <img src="slide2.jpeg" alt="slide 2" />
-    </div>
-    <div class="slide">
-      <img src="slide3.jpeg" alt="slide 3" />
-    </div>
-    <div class="slide">
-      <img src="slide4.jpeg" alt="slide 4" />
-    </div>
+    <div class="slide active"><img src="slide1.webp" alt="Dogs in the forest" /></div>
+    <div class="slide"><img src="slide2.jpeg" alt="Dog swimming" /></div>
+    <div class="slide"><img src="slide3.jpeg" alt="Dogs playing" /></div>
+    <div class="slide"><img src="slide4.jpeg" alt="Dog resting" /></div>
   </div>
 
+  <!-- Footer -->
   <footer>
     <table>
       <tr>
         <th><a href="index.html">Home</a></th>
         <th><a href="Our-services.html">Our services</a></th>
-        <th><a href="index.html#about-us">About us</a></th>
+        <th><a href="#About-us">About us</a></th>
         <th><a href="http://www2.jordbruksverket.se/webdav/files/SJV/trycksaker/Pdf_jo/jo11_2v2.pdf">Terms</a></th>
       </tr>
     </table>
     <p class="source">Daycare Fluffy © 2022</p>
   </footer>
 
+  <!-- Bildspel-script -->
   <script>
     const slides = document.querySelectorAll('.slider .slide');
     let current = 0;
@@ -78,7 +78,7 @@
       showSlide(current);
     }
 
-    setInterval(nextSlide, 4000); // Byter bild var 4:e sekund
+    setInterval(nextSlide, 4000);
   </script>
 </body>
 </html>
