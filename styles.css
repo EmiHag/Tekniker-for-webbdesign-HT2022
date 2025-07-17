@@ -164,6 +164,7 @@ aside {
 aside h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 aside a {
