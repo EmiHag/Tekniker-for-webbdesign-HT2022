@@ -74,12 +74,15 @@ nav {
   font-size: 28px;
   margin-bottom: 20px;
   text-align: center; 
-  text-decoration: none;
 }
 
 #content p {
   font-size: 16px;
   text-align: center;
+}
+
+h2 a {
+  text-decoration: none;
 }
 
 /* ======= TJÄNSTER / LAYOUT ======= */
