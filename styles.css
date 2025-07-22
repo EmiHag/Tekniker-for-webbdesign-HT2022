@@ -81,31 +81,6 @@ nav {
   text-align: center;
 }
 
-/* ======= HISTORY / ASIDE ======= */
-aside {
-  width: 900px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 10px;
-}
-
-aside h2 a {
-  color: #333;
-  text-decoration: none;
-  font-size: 24px;
-}
-
-aside h2 a:hover {
-  color: #6ca0dc;
-   text-align: center;
-}
-
-aside p {
-  margin-top: 10px;
-  font-size: 16px;
-}
-
 /* ======= TJÄNSTER / LAYOUT ======= */
 .services-wrapper {
   display: flex;
