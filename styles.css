@@ -81,10 +81,6 @@ nav {
   text-align: center;
 }
 
-h2 {
-  text-decoration: none;
-}
-
 /* ======= TJÄNSTER / LAYOUT ======= */
 .services-wrapper {
   display: flex;
